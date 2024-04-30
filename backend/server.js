@@ -30,6 +30,10 @@ app.use((req, res, next) => {
 // routes
 app.use('/api/radiators', radiatorRoutes)
 
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+})
+
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
