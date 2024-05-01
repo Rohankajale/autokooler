@@ -11,7 +11,7 @@ const Home = () => {
 
     // useEffect(() => {
     //     const fetchRadiators = async () => {
-    //         const response= await fetch('http://localhost:4000/api/radiators')
+    //         const response= await fetch('/api/radiators')
     //         const json = await response.json()
 
     //         if (!response.ok) {
@@ -27,7 +27,7 @@ const Home = () => {
 
     if (!didInit) {
         const fetchRadiators = async () => {
-            const response= await fetch('http://localhost:4000/api/radiators')
+            const response= await fetch('/api/radiators')
             const json = await response.json()
 
             if (!response.ok) {

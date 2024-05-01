@@ -17,7 +17,7 @@ const useCreateRadiator = () => {
         formData.append('stock', stock)
         formData.append('image', img)
 
-        const response = await fetch('http://localhost:4000/api/radiators', {
+        const response = await fetch('/api/radiators', {
             method: 'POST',
             body: formData
         }) 
