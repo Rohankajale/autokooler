@@ -61,8 +61,8 @@ const RadiatorDetails = ({ radiator }) => {
     console.log(name, price, stock, img)
     const base64String = arrayBufferToBase64(img.data.data)
     return (
-        <div className="ml-10 mr-10 mb-10 card w-96 bg-base-100 shadow-xl">
-        <figure><img src = {`data:img/${img.contentType};base64,${base64String}`} alt = "radiator-img" className = "radiator-img"/></figure>
+        <div className="ml-10 mr-10 mb-10 card w-96 bg-base-100 shadow-xl object-contain">
+        <figure className="h-full w-full object-cover"><img src = {`data:img/${img.contentType};base64,${base64String}`} alt = "radiator-img"/></figure>
         <div className="card-body" />   
         <h4 className="ml-5 mb-2 card-title">{ radiator.name }</h4>
         <p className="ml-5 mb-2"><strong>Price: </strong>{ radiator.price }</p>

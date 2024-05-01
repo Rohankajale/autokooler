@@ -58,7 +58,7 @@ const Navbar = () => {
                     </SignedIn>
                 </header>
                 <SignedOut>
-                <a href="#" class="snipcart-checkout btn btn-neutral sm:justify-end mt-7">Checkout</a>
+                <a href="#" className="snipcart-checkout btn btn-neutral sm:justify-end mt-7">Cart</a>
                 </SignedOut>
                 {/* <button class="snipcart-customer-signin">My account</button> */}
         </nav>
