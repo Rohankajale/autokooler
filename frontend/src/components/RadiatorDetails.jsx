@@ -12,7 +12,7 @@ const RadiatorDetails = ({ radiator }) => {
     const { dispatch } = useRadiatorsContext()
 
     const handleClick = async () => {
-        const response = await fetch (`http://localhost:4000/api/radiators/${ radiator._id }`, {
+        const response = await fetch (`/api/radiators/${ radiator._id }`, {
             method: 'DELETE'
         })
 
@@ -22,7 +22,7 @@ const RadiatorDetails = ({ radiator }) => {
         }
     }
     const Checkout = async (e) => {
-        const response = fetch("http://localhost:4000/api/radiators/checkout-session", {
+        const response = fetch("/api/radiators/checkout-session", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
