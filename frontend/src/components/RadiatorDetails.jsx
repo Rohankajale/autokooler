@@ -74,12 +74,12 @@ const RadiatorDetails = ({ radiator }) => {
         <SignedOut>
         {/* <a href="https://buy.stripe.com/test_cN2dR68ML0ZSc6IeUU" className="mr-10 mb-5 btn btn-primary">Buy</a> */}
         {/* <span className="mr-10 mb-5 btn btn-info" onClick={ Checkout }>Buy Now</span> */}
-        <button className = "snipcart-add-item mr-10 mb-5 btn btn-info"
+        <button className = "buy-button snipcart-add-item mr-10 mb-5 btn btn-info"
             data-item-id = {radiator._id}
             data-item-price = { radiator.price }
             data-item-description = { radiator.stock }
             data-item-image = {`data:img/${img.contentType};base64,${base64String}`}
-            data-item-url = { `https://autokooler.onrender.com/api/radiators/${ radiator._id }` }
+            data-item-url = { "https://autokooler.onrender.com" }
             data-item-name = { radiator.name }
             data-config-add-product-behavior=""
             >

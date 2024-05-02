@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import RadiatorDetails from "./RadiatorDetails";
 
 
 const Navbar = () => {
