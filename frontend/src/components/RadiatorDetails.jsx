@@ -79,6 +79,7 @@ const RadiatorDetails = ({ radiator }) => {
             data-item-price = { radiator.price }
             data-item-description = { radiator.stock }
             data-item-image = {`data:img/${img.contentType};base64,${base64String}`}
+            data-item-url = { `https://autokooler.onrender.com/api/radiators/${ radiator._id }` }
             data-item-name = { radiator.name }
             data-config-add-product-behavior=""
             >
